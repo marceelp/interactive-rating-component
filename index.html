@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- GoogleFont Server -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- GoogleFont Overpass 400/700 -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="card">
+    <article class="rating-state">
+      <div class="circle six">
+        <img class="star-icon" src="./images/icon-star.svg" alt="Star Icon">
+      </div>
+      <h1 class="rating-state__title">How did we do?</h1>
+      <p class="rating-state__text">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+      <div class="circle__container">
+        <section class="circle rating-circle one">1</section>
+        <section class="circle rating-circle two">2</section>
+        <section class="circle rating-circle three">3</section>
+        <section class="circle rating-circle four">4</section>
+        <section class="circle rating-circle five">5</section>
+      </div>
+      <button class="button">SUBMIT</button>
+    </article>
+
+    <article class="thanks-state">
+      <img class="illustration" src="./images/illustration-thank-you.svg" alt="Thank You Illustration">
+      <div class="selection">
+        <p>You selected <span class="selected"></span> out of 5</p>
+      </div>
+      <h1 class="thanks-state__title">Thank you!</h1>
+      <p class="thanks-state__text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </article>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>

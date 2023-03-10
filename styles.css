@@ -1,0 +1,136 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+
+    --dark-blue: hsl(213, 19%, 18%);
+    --bg-dark-blue: hsl(213, 19%, 14%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-state,
+.thanks-state {
+    background: linear-gradient(to top, var(--bg-dark-blue), hsl(213, 19%, 16%));
+    width: 40rem;
+    min-height: 40rem;
+    border-radius: 3rem;
+    padding: 3.6rem;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+p {
+    color: var(--light-grey);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* Rating State */
+
+.circle {
+    background-color: var(--dark-blue);
+    color: var(--medium-grey);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.six {
+    margin-bottom: 3.2rem;
+}
+
+.rating-state__title {
+    margin-bottom: 0.8rem;
+}
+
+.rating-state__text {
+    margin-bottom: 2.4rem;
+}
+
+.circle__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.6rem;
+}
+
+.button {
+    background-color: var(--orange);
+    color: var(--white);
+    border-color: transparent;
+    border-radius: 6rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.button:hover,
+.rating-circle:hover {
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.rating-circle:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* Thank You State */
+
+.thanks-state {
+    text-align: center;
+    padding: 3rem;
+    display: none;
+}
+
+.illustration {
+    margin-bottom: 2.2rem;
+}
+
+.selection {
+    background-color: var(--dark-blue);
+    width: 60%;
+    margin: 0 auto 3.4rem;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+}
+
+.selection p {
+    color: var(--orange);
+}
+
+.thanks-state__title {
+    margin-bottom: 1.2rem;
+}
